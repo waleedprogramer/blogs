@@ -16,7 +16,7 @@ const Catogaries = () => {
       <Heading title='Top Categories' subtitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'/>
      </div>
      
-    <div className='grid grid-cols-1 lg:grid-cols-3'>
+    <div className='grid grid-cols-1 lg:grid-cols-3 page'>
       <ImageWithText
         src={c1}
         alt="An image description"
