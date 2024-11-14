@@ -15,7 +15,7 @@ interface CardProps {
 
 function Card ({ imgSrc, title, time, description, url, author, date }: CardProps)  {
   return (
-    <div className="max-w rounded-lg overflow-hidden shadow-lg bg-card">
+    <div className="max-w rounded-lg overflow-hidden shadow-lg bg-card page">
       <Image 
         src={imgSrc} 
         alt={title} 
