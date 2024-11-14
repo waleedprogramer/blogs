@@ -66,7 +66,7 @@ const Comment = () => {
               key={index}
               className="p-4 flex gap-10 items-center  rounded shadow-sm space-y-6"
             >
-              <div className="flex  h-8 gap-1">
+              <div className="flex  h-8 gap-1 page1">
               <span className="py-2 px-4 bg-gray-800 rounded-full"></span>
               <div className="w-32 "> 
                
