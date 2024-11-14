@@ -43,7 +43,7 @@ function About() {
         </div>
       </div>
 
-      <div className="gap-16 flex flex-col-reverse lg:flex-row px-10   items-center text-text page1">
+      <div className="gap-16 flex flex-col-reverse lg:flex-row px-10   items-center text-text page">
         <div className="content w-full lg:w-1/2 text-center lg:text-left">
           <div className="flex items-center gap-2 justify-center lg:justify-start">
             <span className="py-2 px-2 bg-dark rounded-full"></span>
