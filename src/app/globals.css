@@ -2,20 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+body{
+  background: #0f172a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+.btn-gradient {
+  background: linear-gradient(
+    90deg,
+    rgb(14, 165, 234),
+    rgb(11, 209, 209) 51%,
+    rgb(14, 165, 234)
+  )
+    var(--x, 0);
+  color: white;
+  transition: background-position 0.3s ease;
+}
+
+.btn-gradient:hover {
+  --x: 100%;
+  background-position: 100%;
+}
+
+.bg-custom-gradient {
+  background: linear-gradient(90deg, rgb(14, 165, 234), rgb(11, 209, 209) 51%, rgb(14, 165, 234)) var(--x, 0);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  transform: scale(1.5); 
+  -webkit-transform: scale(1.5); 
+}
+
+/* Animations */
+
+.page{
+  animation: whenView linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes whenView{
+  from {
+      opacity: 0;
+      transform: translateY(200px);
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0px);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.page1{
+  animation: whenView1;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+@keyframes whenView1{
+  from {
+      opacity: 0;
+      transform: translateX(-300px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0px);
+  }
 }

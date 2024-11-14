@@ -9,8 +9,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#0f172a",
+        text:"#d8e6fb",
+        card: "#131c32",
+        color:"#8cabbd",
+        dark: "rgb(14, 165, 234)",
+        clr:"#94a9c9",
+        gradient:"linear-gradient(90deg, rgb(14, 165, 234), rgb(11, 209, 209) 51%, rgb(14, 165, 234)) var(--x, 0)",
+        
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(90deg, rgb(14, 165, 234), rgb(11, 209, 209) 51%, rgb(14, 165, 234)) var(--x, 0)',
       },
     },
   },
