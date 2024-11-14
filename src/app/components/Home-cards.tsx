@@ -16,7 +16,7 @@ const Cards = () => {
           subtitle="Nam egestas mi sit amet orci dignissim tempor Integer tincidunt nunc mauris in egestas nibh."
         />
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 place-content-center  p-10 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 place-content-center  p-10 gap-10 page1">
       <Card
         imgSrc={blg1}
         title="#Photograph"
