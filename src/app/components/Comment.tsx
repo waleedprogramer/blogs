@@ -45,7 +45,7 @@ const Comment = () => {
           onChange={(e) => setComment(e.target.value)}
           className="w-full p-4 border border-dark text-color bg-card rounded-2xl h-32 outline-none"
         ></textarea>
-        <div className="flex gap- justify-between">
+        <div className="flex gap-10 flex-wrap justify-between">
           <div className="flex lg:items-center">
             <input type="checkbox" id="saveInfo" className="mr-2 checkbox" />
             <label htmlFor="saveInfo" className="text-color">
@@ -64,7 +64,7 @@ const Comment = () => {
           commentsList.map((commentItem, index) => (
             <div
               key={index}
-              className="p-4 flex gap-10 items-center  rounded shadow-sm space-y-6"
+              className="p-4 flex flex-wrap gap-10 items-center  rounded shadow-sm space-y-6"
             >
               <div className="flex  h-8 gap-1">
               <span className="py-2 px-4 bg-gray-800 rounded-full"></span>
